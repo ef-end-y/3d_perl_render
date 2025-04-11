@@ -1,8 +1,5 @@
 use strict;
-use Debug;
 use Image::Magick;
-
-Debug->param( -type => 'console', -nochain => 1 );
 
 my $scr_x = 800;
 my $scr_y = 800;
@@ -224,7 +221,6 @@ sub triangle
 
 package Canvas;
 use strict;
-use Debug;
 
 my $image;
 my($scr_x, $scr_y, $scr_z, $center_x, $center_y);
@@ -268,7 +264,6 @@ sub show
 
 package Vector;
 use strict;
-use Debug;
 
 sub new
 {
@@ -291,4 +286,3 @@ sub draw
         color => $color,
     );
 }
-
